@@ -2,8 +2,8 @@
       width="300" height="200"
       xmlns="http://www.w3.org/2000/svg">
  
-   <circle cx="150" cy="100" r="80" fill="red" />
+   <circle cx="150" cy="100" r="80" fill="#0D98BA" />
  
-   <text x="150" y="125" font-size="60" text-anchor="middle" fill="black">ajd</text>
+   <text x="150" y="125" font-size="60" text-anchor="middle" fill="#000000">AJD</text>
  
  </svg>

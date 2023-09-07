@@ -32,7 +32,7 @@ const questions = [
 function createLogo(answers) {
   const createSVG = renShape(answers);
   fs.writeFile(logoPlace, createSVG, () =>
-  console.log('created logo.svg'));
+  console.log('Generated logo.svg'));
 }
 
 
