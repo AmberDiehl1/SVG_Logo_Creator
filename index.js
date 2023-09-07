@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Circle, Square, Triangle} = require('./lib/shapes');
+const logoPlace = './examples/logo.svg'
+const renShape = require('./lib/RenderShape')
 
 const questions = [
   {
@@ -27,22 +28,21 @@ const questions = [
   },
 ];
 
+// function for svg file
+function createLogo(answers) {
+  const createSVG = renShape(answers);
+  fs.writeToFile(logoPlace, createSVG, () => 
+  console.log('created logo.svg'));
+}
+
+
 function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log(answers)
-    if (answers.shape === 'circle') {
-      const newCircle = new Circle(answers.text, answers.text_color, answers.shape, answers.shape_color);
-      newCircle.render();
-    }
-    if (answers.shape === 'square') {
-      const newSquare = new Square(answers.text, answers.text_color, answers.shape, answers.shape_color);
-      newSquare.render();
-    }
-    if (answers.shape === 'triangle') {
-      const newTriangle = new Triangle(answers.text, answers.text_color, answers.shape, answers.shape_color);
-      newTriangle.render();
-    }
-    writeToFile('./examples/logo.svg',shapes(answers))
+    createLogo(answers);
+    })
+    .catch(err => {
+      console.log(err)
     });
 }
 
