@@ -31,7 +31,7 @@ const questions = [
 // function for svg file
 function createLogo(answers) {
   const createSVG = renShape(answers);
-  fs.writeToFile(logoPlace, createSVG, () => 
+  fs.writeFile(logoPlace, createSVG, () =>
   console.log('created logo.svg'));
 }
 
