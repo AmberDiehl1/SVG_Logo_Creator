@@ -29,7 +29,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-- Walkthrough Video: https://drive.google.com/file/d/1rH4uXUq8G8GK9oA2CAQ_xf_iffItiy1Y/view
+- Walkthrough Video: https://drive.google.com/file/d/1IQPSebn08i7cXft-mHg5b0cHsPeJiVHb/view
 
 - Github: https://github.com/AmberDiehl1/SVG_Logo_Creator
 
